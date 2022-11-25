@@ -1,0 +1,217 @@
+:root {
+  --main-color: #2e2f42;
+  --primary-brand: #4d5ae5;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --success: #31d0aa;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Logo */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+}
+
+.web-color {
+  color: var(--primary-brand);
+}
+
+.studio-color {
+  color: var(--main-color);
+}
+
+/* navigation */
+
+.site-nav .link {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--text);
+}
+
+.site-nav .link.current {
+  color: var(--primary-brand);
+}
+
+/* mail and tel */
+
+.mail-tel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header-mail,
+.header-tel {
+  color: var(--text);
+}
+
+.mail-tel .header-mail:hover,
+.mail-tel .header-mail:focus,
+.mail-tel .header-tel:hover,
+.mail-tel .header-tel:focus {
+  color: var(--primary-brand);
+}
+
+/* hero */
+
+.hero {
+  background-color: var(--main-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.btn {
+  font-family: inherit;
+  background-color: var(--primary-brand);
+  color: var(--primary-white-color);
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+
+.btn:active {
+  background-color: #404bbf;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--primary-brand);
+}
+
+/* sections */
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.section-title {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* benefits */
+
+.benefits-list .title {
+  color: var(--main-color);
+}
+
+/* activity */
+
+/* team */
+
+.team-list .title {
+  color: var(--main-color);
+}
+
+/* wish */
+
+.footer-wish {
+  color: var(--accent);
+}
+
+/* footer (test) */
+
+.footer {
+  background-color: var(--main-color);
+}
+
+.footer .studio-color {
+  color: var(--light);
+}
+
+/* ----------------------------Portfolio---------------------------- */
+
+.work-link .text {
+  color: var(--text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.work-link .work-title {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: var(--primary-brand);
+  color: var(--primary-white-color);
+}
+
+.button {
+  font-family: inherit;
+  background-color: var(--light);
+  color: var(--primary-brand);
+  border: var(--accent);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
