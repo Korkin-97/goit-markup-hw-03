@@ -29,7 +29,6 @@ ul {
 
 .list {
   list-style: none;
-
   padding: 0;
 }
 
@@ -59,13 +58,13 @@ ul {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid grey;
+  outline: 2px solid red;
 }
 
 /* Header */
 
 .page-header {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
 }
 
 /* Logo */
