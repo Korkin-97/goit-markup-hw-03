@@ -47,24 +47,20 @@ ul {
   overflow: hidden;
 }
 
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* Header */
 
-.page-header {
-  background-color: var(--primary-white-color);
+.main-header {
+  display: flex;
+  align-items: center;
 }
 
 /* Logo */
@@ -75,6 +71,8 @@ ul {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
+
+  width: 115px;
 }
 
 .web-color {
@@ -87,8 +85,22 @@ ul {
 
 /* navigation */
 
+.site-nav {
+  display: flex;
+  margin-left: 77px;
+}
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--main-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -105,7 +117,14 @@ ul {
 
 /* mail and tel */
 
+.mail-tel .item + .item {
+  margin-left: 40px;
+}
+
 .mail-tel {
+  display: flex;
+  margin-left: auto;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -134,27 +153,30 @@ ul {
   margin-bottom: 48px;
 
   color: var(--primary-white-color);
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
 }
 
 .btn {
-  font-family: inherit;
+  padding: 16px 32px;
+
   background-color: var(--primary-brand);
   color: var(--primary-white-color);
-  border: none;
-  cursor: pointer;
+
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  align-items: center;
   letter-spacing: 0.04em;
 
-  padding: 16px 32px;
   min-width: 170px;
   height: 51px;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
 }
 
 .btn:active {
@@ -187,6 +209,7 @@ ul {
   margin-bottom: 72px;
 
   color: var(--main-color);
+
   font-weight: 500;
   font-size: 36px;
   line-height: 1.11;
@@ -204,15 +227,52 @@ ul {
 
 /* benefits */
 
-.benefits-list .title {
-  margin-top: 0;
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
 
+.benefits-list .title {
   color: var(--main-color);
+}
+
+.benefits-list .item {
+  width: calc((100% - 72px) / 4);
+}
+
+.benefits-list .item:nth-child(4n) {
+  margin-right: 0;
 }
 
 /* activity */
 
+.activity-section {
+  padding-top: 0;
+}
+
+.activity-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-list .item {
+  width: calc((100% - 48px) / 3);
+}
+
+.activity-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
 /* team */
+
+.team-section {
+  background-color: var(--light);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 .team-list .title {
   color: var(--main-color);
@@ -221,13 +281,23 @@ ul {
 /* wish */
 
 .footer-wish {
+  margin-top: 16px;
+  width: 264px;
+
   color: var(--accent);
 }
 
-/* footer (test) */
+/* footer */
 
 .footer {
+  height: 310px;
   background-color: var(--main-color);
+}
+
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 310px;
 }
 
 .footer .studio-color {
@@ -238,6 +308,7 @@ ul {
 
 .work-link .text {
   color: var(--text);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -246,6 +317,7 @@ ul {
 
 .work-link .work-title {
   color: var(--main-color);
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -260,14 +332,20 @@ ul {
 }
 
 .button {
-  font-family: inherit;
+  display: flex;
   background-color: var(--light);
   color: var(--primary-brand);
-  border: var(--accent);
-  cursor: pointer;
+  border: 1px solid var(--accent);
+
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
+
+  cursor: pointer;
+  min-width: 78px;
+  height: 48px;
+  border-radius: 4px;
 }
