@@ -19,30 +19,30 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container main-header">
         <a href="./index.html" class="link web-color logo"
           >WEB<span class="studio-color logo">STUDIO</span></a
         >
         <!-- navigation -->
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Studio</a></li>
-            <li>
+            <li class="item">
+              <a href="./index.html" class="link">Studio</a>
+            </li>
+            <li class="item">
               <a href="./portfolio.html" class="link current">Portfolio</a>
             </li>
-            <li><a href="#" class="link">Contacts</a></li>
+            <li class="item"><a href="#" class="link">Contacts</a></li>
           </ul>
         </nav>
-      </div>
-      <!-- mail and tel -->
-      <div class="container">
+        <!-- mail and tel -->
         <ul class="mail-tel list">
-          <li>
+          <li class="item">
             <a class="link header-mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a class="link header-tel" href="tel:+11(000)111-11-11"
               >+11 (000) 111-11-11</a
             >
@@ -54,13 +54,15 @@
       <section>
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="list">
-            <li><button type="button" class="button">All</button></li>
-            <li><button type="button" class="button">Web Site</button></li>
-            <li><button type="button" class="button">App</button></li>
-            <li><button type="button" class="button">Design</button></li>
-            <li><button type="button" class="button">Marketing</button></li>
-          </ul>
+          <div class="buttons-container">
+            <ul class="list">
+              <li><button type="button" class="button">All</button></li>
+              <li><button type="button" class="button">Web Site</button></li>
+              <li><button type="button" class="button">App</button></li>
+              <li><button type="button" class="button">Design</button></li>
+              <li><button type="button" class="button">Marketing</button></li>
+            </ul>
+          </div>
           <ul class="works-list list">
             <li>
               <a href="#" class="work-link link">
@@ -139,7 +141,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <a href="./index.html" class="link web-color logo"
           >WEB<span class="studio-color logo">STUDIO</span></a
         >
